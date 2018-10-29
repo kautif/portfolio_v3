@@ -1,0 +1,736 @@
+body {
+	background: url('img/picnic_table.jpg');
+	margin: 0;
+}
+
+.all-content {
+	width: 80%;
+	text-align: center;
+	background: url('img/red_flannel.jpg');
+	margin-left: 10%;
+	
+}
+
+.top-flex {
+	display: flex;
+}
+
+.logo {
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	background-color: #9A1C1F;
+}
+
+.logo img {
+	width: 50%;
+	padding-top: 0%;
+}
+
+.contact {
+	width: 50%;
+	text-align: center;
+	background-color: #9A1C1F;
+	padding-top: 0%;
+}
+
+.contact p {
+	color: #FDAF17;
+	font-size: 1.25em;
+}
+
+.contact img {
+	width: 10%;
+}
+
+.delivery-btn {
+	background-color: #FDAF17;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+	border-radius: 10px;
+	font-size: 1.25em;
+}
+
+.nav {
+	background-color: #0C0001;
+	
+}
+
+.nav a {
+	color: #FDAF17;
+	font-size: 1.5em;
+	text-decoration: none;	
+}
+
+.nav a:hover {
+	color:white;
+}
+
+.nav ul {
+	display: inline-block;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+
+.nav ul li {
+	display: inline;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.slideshow {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.mySlides img {
+	width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev {
+	left: 4%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 4%;
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+	margin-top: 15px;
+	margin-bottom: 20px !important;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.menu-flex {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.menu button {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 15px;
+	font-size: 1.25em;
+	background-color: #FDAF17;
+	font-weight: bolder;
+}
+
+td,
+th {
+	padding-right: 40px; 
+}
+
+.catering {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/kitchen.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.catering-quote {
+	display: flex;
+	justify-content: center;
+	color: white
+}
+
+form {
+	text-align: center;
+}
+
+input,
+textarea,
+select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+} 
+
+.meat,
+.sides,
+.desserts {
+	margin-right: 20px;
+}
+
+.quote-left span {
+	margin-top: 10px;
+}
+
+.quote-left input,
+.quote-middle input,
+.quote-right input,
+.quote-right textarea,
+.quote-right select {
+	width: 90%;
+	text-align: center;
+}
+
+.quote-right {
+	text-align: center;
+	margin-left: 20px;
+
+}
+
+
+.quote-right .submit {
+	margin-top: 20px;
+
+}
+
+.submit {
+	padding: 10px 20px;
+}
+
+.catering h1,
+.catering-submission h1,
+.catering-submission h2 {
+	color: white;
+}
+
+.catering-submission {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/kitchen.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.members-content {
+	display: flex;
+}
+
+.main-location {
+	padding-bottom: 40px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/food_truck.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-location h1 {
+	margin-left: 35%;
+	margin-right: 35%;
+	color: white;
+	padding: 10px 5px;
+}
+
+#gmap {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+.location-details {
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 92%;
+}
+
+.location-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.hours p {
+	color: white !important;
+}
+
+.gallery {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+}
+
+.gallery h1 {
+	color: white;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.gallery img {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+.history,
+.team {
+	width: 80%;
+	
+	padding: 10px;
+	text-align: left;
+
+}
+
+.content-heading {
+	text-align: center;	
+}
+
+.members {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/truck_logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 40px;
+}
+
+.members h1,
+.members-content {
+	color: white;
+}
+
+.team-pics {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.team-pics h2 {
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+.team-pics img {
+	width: 150px;
+	height: 200px;
+	margin-top: 20px;
+	border-radius: 12%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption1 { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+.x {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.x:hover,
+.x:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px; 
+}
+
+.footer h3 {
+	color: white;
+}
+
+.f-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.footer a {
+	color: #FDAF17;
+	text-decoration: none;
+}
+
+.footer li {
+	margin-top: 10px;
+}
+
+.delivery {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center; 
+}
+
+.creator {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.creator span {
+	color: white;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.specialty {
+	background-color: white;
+	width: 50%;
+	margin-left: 24%;
+	padding: 20px;
+}
+
+@media (min-width: 1001px) {
+	.food_truck {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1000px) {
+	button {
+		font-size: .9em;
+	}
+
+	.contact {
+		font-size: .75em;
+	}
+
+	.contact img {
+		width: 12%;
+	}
+
+	.food_truck {
+		width: 80%;
+	}
+
+	.team-pics {
+		width: 87%;
+	}
+}
+
+@media (min-width: 801px) {
+	.sidenav,
+	span img {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	button {
+		font-size: .7em;
+		padding: 10px 5px;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	span img {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+	}
+
+	.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FDAF17;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.catering {
+	background-attachment: fixed;
+}
+
+.catering-quote {
+	flex-wrap: wrap;
+}
+
+.contact {
+	font-size: .6em;
+}
+
+.contact img {
+	width: 10%;
+}
+
+#gmap {
+	width: 100% !important;
+}
+
+.location-details {
+	flex-direction: column;
+}
+
+.location-flex {
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.members-content {
+	flex-direction: column;
+	align-items: center;
+}
+
+.team-pics img {
+	width: 100px;
+	height: 150px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+}
+
+@media (max-width: 600px) {
+	.top-flex {
+		flex-direction: column;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.contact {
+		width: 100%;
+		font-size: 1em;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.delivery-btn {
+		padding: 5px;
+		font-size: 1em; 
+	}
+
+	.food_truck {
+		width: 100%;
+	}
+
+	.modal-content {
+		width: 50%;
+	}
+
+	.main-location {
+		background-attachment: fixed;
+	}
+
+	.footer {
+		flex-direction: column;
+	}
+
+	.creator {
+		text-align: center; 
+	}
+
+	.location-details {
+		width: 100%;
+	}
+
+	.location-flex {
+		width: 60%;
+	}
+
+}
+
+@media (max-width: 425px){
+	.delivery-btn {
+		font-size: .7em;
+	}
+
+	.catering h1 {
+		font-size: 1.25em;
+	}
+
+	.main-location h1 {
+		margin: 0%;
+	}
+
+	.gallery h1 {
+		font-size: 1.5em;
+		margin: 0%;
+	}
+
+	.team-flex-lvl2 {
+		margin-left: 8% !important;
+	}
+
+	.modal-content {
+		width: 65%;
+	}
+
+	.members p {
+		font-size: .8em;
+	}
+
+	.team-flex-lvl2 {
+		display: flex;
+		margin-left: 14%;
+	}
+
+	.team-flex-lvl2 .team-pics {
+		flex-direction: column;
+	}
+}

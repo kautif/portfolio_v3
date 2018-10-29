@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+	<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<title>Hazel's Back Porch BBQ</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	</head>
+		<body>
+
+			<div class="all-content">
+				<div class="top-flex">
+					<div class="logo">
+						<img src="img/hazel_bbq_logo.png" alt="Hazel's logo">
+					</div>
+
+					<div class="contact">
+						<p>(903) 394 - 8955</p>
+						<p>2117 E Maddox Ave</p>
+						<p>Fort Worth, TX 76104</p>
+						<a href="https://www.facebook.com/HBPBBQ/?ref=bookmarks" target="_blank"><img src="img/facebook.png" alt="Hazel's Facebook"></a>
+					</div>
+
+				</div>
+
+				<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="pages/menu.php">Menu</a>
+				  <a href="pages/menu.php">Catering</a>
+				  <a href="pages/location.html">Find Us</a>
+				  <a href="pages/gallery.html">Satisfied Customers</a>
+				  <a href="pages/about.html">About Us</a> 
+				</div>
+
+				<!-- Use any element to open the sidenav -->
+				<span onclick="openNav()"><img src="img/hamburger.png"></span>
+
+				<a href="#delivery"><button class="delivery-btn"><b>WE DELIVER</b></button></a>
+
+				<div class="nav">
+					<ul>
+						<li><a href="pages/menu.php">Menu</a></li>
+						<li><a href="pages/menu.php">Catering</a></li>
+						<li><a href="pages/location.html">Find Us</a></li>
+						<a href="pages/gallery.html">Satisfied Customers</a>
+						<li><a href="pages/about.html">About Us</a></li>
+					</ul>
+				</div>
+
+				<div class="slideshow-flex">
+					<div class="slideshow">
+						<div class="mySlides fade">
+						    <div class="numbertext">1 / 6</div>
+						    <img src="img/togo_tray_crop.jpg">
+						    
+					    </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">2 / 6</div>
+						    <img src="img/sausages.jpg">
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">3 / 6</div>
+						    <img src="img/rib_sandwich.jpg">
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">4 / 6</div>
+						    <img src="img/ribs.jpg">
+					    </div>
+
+					    <div class="mySlides fade">
+						    <div class="numbertext">5 / 6</div>
+						    <img src="img/coleslaw.jpg">
+					    </div>
+
+					    <div class="mySlides fade">
+						    <div class="numbertext">6 / 6</div>
+						    <img src="img/ribs_split.jpg">
+					    </div>
+
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+
+						<div class="dots" style="text-align:center; margin-bottom: 20px; margin-top: 20px;">
+						  <span class="dot" onclick="currentSlide(1)"></span> 
+						  <span class="dot" onclick="currentSlide(2)"></span> 
+						  <span class="dot" onclick="currentSlide(3)"></span> 
+						  <span class="dot" onclick="currentSlide(4)"></span> 
+						  <span class="dot" onclick="currentSlide(5)"></span> 
+						  <span class="dot" onclick="currentSlide(6)"></span> 
+						</div>
+
+				</div>
+
+				<img class="food_truck" src="img/food_truck.jpg" alt="Hazel's Food Truck">
+
+			</div>
+
+			<div class="footer">
+					<ul class="f-menu">
+						<h3>NAVIGATION</h3>
+						<li><a href="pages/menu.php">Menu</a></li>
+						<li><a href="pages/menu.php">Catering</a></li>
+						<li><a href="pages/location.html">Find Us</a></li>
+						<li><a href="pages/gallery.html">Satisfied Customers</a></li>
+						<li><a href="pages/about.html">About Us</a></li>
+					</ul>
+
+					<ul class="delivery" id="delivery">
+					<h3>WE DELIVER</h3>
+						<li><a href="https://www.ubereats.com" target="_blank"><img src="img/ubereats.png" alt="Uber Eats"></a></li>
+						<li><a href="https://favordelivery.com" target="_blank"><img src="img/favor.jpg" alt="Favor"></a></li>
+						<li><a href="https://postmates.com" target="_blank"><img src="img/postmates.png" alt="Postmates"></a></li>
+						<li><a href="https://www.grubhub.com/" target="_blank"><img src="img/grubhub.png" alt="Grubhub"></a></li>
+						<li><a href="https://www.doordash.com/store/120248/?utm_source=partner-link&utm_medium=website&utm_campaign=120248" target="_blank"><img src="img/doordash.jpg" alt="Door Dash"></a></li>
+					</ul>
+
+				<div class="creator">
+					<span>Created by <a href="www.kautif.com">Autif Kamal</a></span>
+				</div>
+
+			</div>
+		<script src="js/slide.js"></script>
+		</body>
+	</html>

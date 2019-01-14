@@ -1,6 +1,9 @@
 body {
-  overflow-x: hidden;
-  background-color: #BBDEFB !important;
+  overflow-y: hidden;
+  background: url('https://www.pictorem.com/collection/900_1805296HighRes.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
 
 }
 

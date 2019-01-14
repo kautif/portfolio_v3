@@ -43,6 +43,10 @@ p a {
   text-decoration: underline;
 }
 
+.nav a:hover {
+  color: #003f8f;
+}
+
 .nav-left {
   float: left;
 }

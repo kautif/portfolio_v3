@@ -1,0 +1,31 @@
+body {
+	margin: 0; 
+  overflow-y: hidden;
+  background: url('https://www.pictorem.com/collection/900_1805296HighRes.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+}
+
+.menu {
+	width: 100%;
+	font-size: 2em;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.menu div {
+	background-color: #DAA458;
+	width: 25%; 
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu div:hover {
+	background-color: #cc9753;
+}

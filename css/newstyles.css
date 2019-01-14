@@ -1,6 +1,6 @@
 body {
 	margin: 0; 
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   background: url('https://www.pictorem.com/collection/900_1805296HighRes.jpg');
   background-size: cover;
   height: 100vh;
@@ -43,4 +43,24 @@ body {
 .bio-body p {
 	font-size: 1.75em;
 	line-height: 50px;
+}
+
+.projects {
+	display: none;
+}
+
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projects-container div {
+	width: 48%;
+	text-align: center;
+	background-color: lightgreen;
+	margin: 10px;
+}
+
+.resume {
+	display: none;
 }

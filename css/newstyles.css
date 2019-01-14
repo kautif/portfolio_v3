@@ -29,3 +29,18 @@ body {
 .menu div:hover {
 	background-color: #cc9753;
 }
+
+.bio-body {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	border-radius: 14px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+}
+
+.bio-body p {
+	font-size: 1.75em;
+	line-height: 50px;
+}

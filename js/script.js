@@ -1,26 +1,26 @@
 $('#bio-link').on('click', function(e) {
-	$('.bio').toggle();
-	$('.resume').hide();
-	$('.projects').hide();
-	$('.contact').hide();
+	$('.bio').show().css('transition', '1000ms');
+	$('.resume').hide().css('transition', '1000ms');
+	$('.projects').hide().css('transition', '1000ms');
+	$('.contact').hide().css('transition', '1000ms');
 });
 
 $('#projects-link').on('click', function(e) {
-	$('.projects').toggle();
+	$('.projects').show();
 	$('.bio').hide();
 	$('.resume').hide();
 	$('.contact').hide();
 });
 
 $('#resume-link').on('click', function(e) {
-	$('.resume').toggle();
+	$('.resume').show();
 	$('.bio').hide();
 	$('.projects').hide();
 	$('.contact').hide();
 });
 
 $('#contact-link').on('click', function(e) {
-	$('.contact').toggle();
+	$('.contact').show();
 	$('.bio').hide();
 	$('.projects').hide();
 	$('.resume').hide();

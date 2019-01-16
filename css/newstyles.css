@@ -30,6 +30,10 @@ body {
 	background-color: #cc9753;
 }
 
+.active {
+	background-color: #cc9753 !important;	
+}
+
 .bio-body {
 	width: 75%;
 	margin-left: auto;

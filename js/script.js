@@ -1,8 +1,12 @@
 $('#bio-link').on('click', function(e) {
-	$('.bio').show().css('transition', '1000ms');
-	$('.resume').hide().css('transition', '1000ms');
-	$('.projects').hide().css('transition', '1000ms');
-	$('.contact').hide().css('transition', '1000ms');
+	$('.bio').show();
+	$('.resume').hide();
+	$('.projects').hide();
+	$('.contact').hide();
+	$('#bio-link').addClass('active');
+	$('#projects-link').removeClass('active');
+	$('#resume-link').removeClass('active');
+	$('#contact-link').removeClass('active');
 });
 
 $('#projects-link').on('click', function(e) {
@@ -10,6 +14,10 @@ $('#projects-link').on('click', function(e) {
 	$('.bio').hide();
 	$('.resume').hide();
 	$('.contact').hide();
+	$('#projects-link').addClass('active');
+	$('#bio-link').removeClass('active');
+	$('#resume-link').removeClass('active');
+	$('#contact-link').removeClass('active');
 });
 
 $('#resume-link').on('click', function(e) {
@@ -17,6 +25,10 @@ $('#resume-link').on('click', function(e) {
 	$('.bio').hide();
 	$('.projects').hide();
 	$('.contact').hide();
+	$('#resume-link').addClass('active');
+	$('#projects-link').removeClass('active');
+	$('#bio-link').removeClass('active');
+	$('#contact-link').removeClass('active');
 });
 
 $('#contact-link').on('click', function(e) {
@@ -24,4 +36,8 @@ $('#contact-link').on('click', function(e) {
 	$('.bio').hide();
 	$('.projects').hide();
 	$('.resume').hide();
+	$('#contact-link').addClass('active');
+	$('#projects-link').removeClass('active');
+	$('#resume-link').removeClass('active');
+	$('#bio-link').removeClass('active');
 });

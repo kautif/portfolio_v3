@@ -97,8 +97,13 @@ body {
 	border-radius: 8px;
 }
 
-.contact div {
+.contact div,
+.contact {
 	text-align: center;
+}
+
+.contact h1 {
+	color: white;
 }
 
 .contact-icons {
@@ -108,4 +113,51 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2%; 	
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.bio-body p {
+		font-size: 1.25em;
+		line-height: 30px;
+	}
+
+	.projects-container div {
+		width: 93%;
+	}
+
+	.projects-container img {
+		width: 90%;
+	}
+
+	.view-resume {
+		width: 55%;
+	}
+
+	.contact-icons {
+		width: 100%;
+	}
+
+	.contact-icons img {
+		width: 80%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.bio-body {
+		margin-top: 4%;
+	}
+
+	.projects-container {
+		margin-top: 10px;
+	}
+
+	.projects-container div {
+		width: 86%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.view-resume {
+		width: 25%;
+	}
 }

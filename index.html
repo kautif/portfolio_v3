@@ -3,6 +3,8 @@
 <head>
     <link rel="shortcut icon" href="img/ak_icon.png" />
     <link rel="stylesheet" type="text/css" href="css/newstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/sidenav.css">
+    <link href="https://fonts.googleapis.com/css?family=Aleo|PT+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -13,11 +15,23 @@
 
 <body>
     <div class="menu">
-        <div id="bio-link">Bio</div>
-        <div id="projects-link">Projects</div>
-        <div id="resume-link">Resume</div>
-        <div id="contact-link">Contact</div>
+        <div class="bio-link">Home</div>
+        <div class="projects-link">Projects</div>
+        <div class="resume-link"><a href="https://drive.google.com/file/d/1iBz1sgkjAnZS5No50wCL2Cv-8-Zggdsx/view?usp=sharing" target="_blank">View Resume</a></div>
+        <div class="contact-link">Contact</div>
     </div>
+
+    <nav role="navigation" id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn non-nav" onclick="closeNav()">&times;</a>
+        <a class="bio-link">Home</a>
+        <a class="projects-link">Projects</a>
+        <a class="resume-link"><a href="https://drive.google.com/file/d/1iBz1sgkjAnZS5No50wCL2Cv-8-Zggdsx/view?usp=sharing" target="_blank">View Resume</a>
+        <a class="contact-link">Contact</a>
+    </nav>
+
+    <span class="hamburger-menu" onclick="openNav()">
+        <img src="img/hamburger.png">
+    </span>
 
     <div class="bio">
         <div class="bio-body">
@@ -29,55 +43,96 @@
 
     <div class="projects">
         <div class="projects-container">
-            <div>
+            <div class="project">
                 <h2>Street Fighter Quiz</h2>
                 <img src="img/sf_quiz_screenshot_thumbsize.png">
                 <div class="project-links">
-                    <a href="https://www.kautif.com/sf_quiz" target="_blank">Live</a>
-                    <a href="https://github.com/kautif/sfquiz" target="_blank">Repo</a>
+                    <div class="proj-link">
+                        <a href="https://www.kautif.com/sf_quiz" target="_blank">Live</a>
+                    </div>
+
+                    <div class="proj-link">
+                        <a href="https://github.com/kautif/sfquiz" target="_blank">Repo</a>
+                    </div>
                 </div>
                 <p>Test your knowledge about this Street Fighter</p>
                 <p>HTML, CSS, JS, jQuery</p>
             </div>
             
-            <div>
+            <div class="project">
                 <h2>Movie Honer</h2>
                 <img src="img/movieHoner_thumb.png">
                 <div class="project-links">
-                    <a href="https://movie-honer.herokuapp.com/" target="_blank">Live</a>
-                    <a href="https://github.com/kautif/movieHoner" target="_blank">Repo</a>
+                    <div class="proj-link">
+                        <a href="https://movie-honer.herokuapp.com/" target="_blank">Live</a>
+                    </div>
+
+                    <div class="proj-link">
+                        <a href="https://github.com/kautif/movieHoner" target="_blank">Repo</a>
+                    </div>
+
                 </div>
                 <p>Do a very filtered search for movies</p>
                 <p>HTML, CSS, JS, jQuery, React, Node</p>
             </div>
             
-            <div>
+            <div class="project">
                 <h2>TV Suggester</h2>
                 <img src="img/tvsuggester_thumb.png">
                 <div class="project-links">
-                    <a href="https://www.kautif.com/tvsuggester" target="_blank">Live</a>
-                    <a href="https://github.com/kautif/tvsuggester" target="_blank">Repo</a>
+                    <div class="proj-link">
+                        <a href="https://www.kautif.com/tvsuggester" target="_blank">Live</a>
+                    </div>
+
+                    <div class="proj-link">
+                        <a href="https://github.com/kautif/tvsuggester" target="_blank">Repo</a>
+                    </div>
                 </div>
                 <p>Get recommendations and reviews for a show to watch</p><p>HTML, CSS, JS, jQuery</p>
             </div>
             
-            <div>
+            <div class="project">
                 <h2>Cig Houston Insurance</h2>
                 <img src="img/cighouston_thumbsize.png">
                 <div class="project-links">
-                    <a href="https://www.kautif.com/chriscashin/index.html" target="_blank">Live</a>
-                    <a href="https://github.com/kautif/chriscashin" target="_blank">Repo</a>
+                    <div class="proj-link">
+                        <a href="https://www.kautif.com/chriscashin/index.html" target="_blank">Live</a>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kautif/chriscashin" target="_blank">Repo</a>
+                    </div>
                 </div>
                 <p>Local insurance company for all major insurance policies</p>
                 <p>HTML, CSS, JS, jQuery, PHP</p>
             </div>
 
-            <div>
+            <div class="project">
+                <h2>Hazel's BBQ Food Truck</h2>
+                <img src="img/hazel_thumb.png">
+                <div class="project-links">
+                    <div class="proj-link">
+                        <a href="./hazel" target="_blank">Live</a>
+                    </div>
+
+                    <div class="proj-link">
+                        <a href="https://github.com/kautif/hazel" target="_blank">Repo</a>
+                    </div>
+                </div>
+                <p>BBQ Food Truck that was in the Dallas/Fort Worth area.</p>
+                <p>HTML, CSS, JS, jQuery, PHP</p>
+            </div>
+
+            <div class="project">
                 <h2>Client Magnet</h2>
                 <img src="img/client-magnet_thumb.png">
                 <div class="project-links">
-                    <a href="http://yourclientmagnet.com/" target="_blank">Live</a>
-                    <a href="https://github.com/kautif/client-magnet" target="_blank">Repo</a>
+                    <div class="proj-link">
+                        <a href="http://yourclientmagnet.com/" target="_blank">Live</a>   
+                    </div>
+
+                    <div class="proj-link">
+                        <a href="https://github.com/kautif/client-magnet" target="_blank">Repo</a>
+                    </div>
                 </div>
                 <p>New and local marketing firm</p>
                 <p>HTML, CSS, JS, jQuery, PHP</p>
@@ -100,10 +155,10 @@
             <img src="img/autif_profile_resize.jpg">
         </div>
         <div class="contact-icons">   
-            <a href="https://www.linkedin.com/in/autif-kamal-463699135/">
+            <a href="https://www.linkedin.com/in/autif-kamal-463699135/" target="_blank">
                 <img src="img/linkedin_resize.png" alt="LinkedIn">
             </a>
-            <a href="https://github.com/kautif">
+            <a href="https://github.com/kautif" target="_blank">
                 <img src="img/github_trans.png" alt="Github">
             </a>
             <a href="mailto:kautif@gmail.com">
@@ -111,7 +166,8 @@
             </a>
         </div>
     </div>
-
+    <script type="text/javascript" src="js/hammenu.js"></script>
+    <script type="text/javascript" src="js/sidenav.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

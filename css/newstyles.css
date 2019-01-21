@@ -16,13 +16,23 @@ body {
 	text-align: center;
 }
 
+.menu,
+h1,
+h2 {
+	font-family: 'Aleo', serif;
+}
+
+p,
+a {
+	font-family: 'PT Sans', sans-serif;
+}
+
 .menu div {
 	background-color: #DAA458;
 	width: 25%; 
 }
 
 .menu a {
-	color: white;
 	text-decoration: none;
 }
 
@@ -59,7 +69,7 @@ body {
 	flex-wrap: wrap;
 }
 
-.projects-container div {
+.projects-container .project {
 	width: 48%;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -67,17 +77,32 @@ body {
 	margin: 10px;
 }
 
+.project img {
+	margin-bottom: 10px;
+}
+
 .project-links {
 	display: flex;
-	justify-content: space-around;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	font-size: 1.5em;
+	width: 50%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .project-links a {
 	text-decoration: none;
 }
+
+.proj-link {
+	width: 50%;
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+.proj-link:hover {
+	background-color: #DAA458;
+}
+
 
 .resume {
 	display: none;

@@ -1,7 +1,7 @@
 body {
 	margin: 0; 
   /*overflow-y: hidden;*/
-  background: url('https://www.pictorem.com/collection/900_1805296HighRes.jpg');
+  background: url('https://i.imgur.com/0m4RNzo.jpg');
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -17,18 +17,19 @@ body {
 }
 
 .menu,
+.menu a,
 h1,
 h2 {
-	font-family: 'Aleo', serif;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 p,
 a {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .menu div {
-	background-color: #DAA458;
+	background-color: #B4E081;
 	width: 25%; 
 }
 
@@ -37,11 +38,13 @@ a {
 }
 
 .menu div:hover {
-	background-color: #cc9753;
+	background-color: #577539;
+	color: white;
 }
 
 .active {
-	background-color: #cc9753 !important;	
+	background-color: #577539 !important;	
+	color: white;
 }
 
 .bio-body {
@@ -100,9 +103,18 @@ a {
 }
 
 .proj-link:hover {
-	background-color: #DAA458;
+	background-color: #B4E081;
 }
 
+.project-icon {
+	width: 50px;
+	margin-left: 20px;
+}
+
+.project-icon-js {
+	width: 36px;
+	margin-left: 20px;
+}
 
 .resume {
 	display: none;
@@ -140,19 +152,19 @@ a {
 	margin-top: 2%; 	
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
 	.bio-body p {
 		font-size: 1.25em;
 		line-height: 30px;
 	}
 
-	.projects-container div {
-		width: 93%;
+	.projects-container .project {
+		width: 95%;
 	}
 
-	.projects-container img {
+	./*projects-container img {
 		width: 90%;
-	}
+	}*/
 
 	.view-resume {
 		width: 55%;

@@ -159,6 +159,10 @@ a {
 	margin-top: 2%; 	
 }
 
+.linkedin {
+	width: 200%;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
 	.bio {
 		flex-direction: column;

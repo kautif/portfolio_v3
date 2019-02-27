@@ -16,6 +16,10 @@ body {
 	text-align: center;
 }
 
+.menu div {
+	cursor: pointer;
+}
+
 .menu,
 .menu a,
 h1,

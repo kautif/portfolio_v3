@@ -1,54 +1,13 @@
 body {
 	margin: 0; 
-  /*overflow-y: hidden;*/
-  background: url('https://cdn.pixabay.com/photo/2018/02/19/00/14/tree-3163913_960_720.jpg');
-  background-size: cover;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-.menu {
-	width: 100%;
-	font-size: 2em;
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-}
-
-.menu div {
-	cursor: pointer;
-}
-
-.menu,
-.menu a,
-h1,
-h2 {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-p,
-a {
-	font-family: 'Noto Sans', sans-serif;
-}
-
-.menu div {
-	background-color: #B4E081;
-	width: 25%; 
-}
-
-.menu a {
-	text-decoration: none;
-}
-
-.menu div:hover {
-	background-color: #577539;
-	color: white;
+.nav-link {
+	font-size: 1.5em;
 }
 
 .active {
-	background-color: #577539 !important;	
-	color: white !important;
+	color: black;
 }
 
 .bio {
@@ -66,7 +25,7 @@ a {
 .bio-body {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10%;
+	margin-top: 4%;
 	border-radius: 14px;
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 20px;
@@ -89,7 +48,6 @@ a {
 }
 
 .projects-container .project {
-	width: 48%;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 14px;
@@ -98,18 +56,6 @@ a {
 
 .project img {
 	margin-bottom: 10px;
-}
-
-.project-links {
-	display: flex;
-	width: 50%;
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.project-links a {
-	text-decoration: none;
 }
 
 .proj-link {
@@ -164,13 +110,22 @@ a {
 	margin-top: 2%; 	
 }
 
-.linkedin {
-	width: 200%;
+.contact i {
+	font-size: 5em;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	.card {
+		display: none !important;
+	}
+	
 	.bio {
+		margin-top: 10%;
 		flex-direction: column;
+	}
+
+	.bio h1 {
+		font-size: 2em;
 	}
 
 	.profile-pic {
@@ -187,6 +142,10 @@ a {
 	.bio-body p {
 		font-size: 1.25em;
 		line-height: 30px;
+	}
+
+	.projects {
+		margin-top: 10%;
 	}
 
 	.projects-container .project {

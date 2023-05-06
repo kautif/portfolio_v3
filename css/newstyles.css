@@ -125,6 +125,7 @@ a .twitch {
 }
 
 .projects,
+.games,
 .contact {
 	display: none;
 }
@@ -134,12 +135,14 @@ a .twitch {
 	background-size: 100% 100%;
 }
 
-.projects-container {
+.projects-container,
+.games-container {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.projects-container .project {
+.projects-container .project,
+.games-container .game {
 	text-align: center;
 	/*background-color: rgba(255, 255, 255, 0.8);*/
 	border-radius: 14px;
@@ -154,26 +157,18 @@ a .twitch {
 	margin-top: 8%;
 }
 
-.project img {
+.project img,
+.game img {
 	margin-bottom: 10px;
 }
 
-.project p {
+.project p,
+.game p {
 	font-size: 1.35em;
 }
 
 .mockup {
 	width: 100%;
-}
-
-.proj-link {
-	width: 50%;
-	padding: 10px;
-	font-size: 1.5em;
-}
-
-.proj-link:hover {
-	background-color: #B4E081;
 }
 
 .project-icon {
@@ -288,11 +283,13 @@ a .twitch {
 		line-height: 30px;
 	}
 
-	.projects {
+	.projects,
+	.games {
 		margin-top: 10%;
 	}
 
-	.projects-container .project {
+	.projects-container .project
+	.games-container .game {
 		width: 95%;
 	}
 
@@ -356,11 +353,13 @@ a .twitch {
 		text-align: center;
 	}
 
-	.projects-container {
+	.projects-container
+	.games-container {
 		margin-top: 10px;
 	}
 
-	.projects-container .project {
+	.projects-container .project,
+	.games-container .game {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;

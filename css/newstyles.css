@@ -1,0 +1,372 @@
+@font-face {
+  font-family: Viva;
+  src: url(VivaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: InstrumentSerif;
+  src: url(InstrumentSerif-Regular.ttf);
+}
+
+body {
+	margin: 0; 
+}
+
+h1, h2 {
+	font-family: Viva;
+}
+
+p, li {
+	font-family: InstrumentSerif;
+}
+
+.nav-link {
+	font-size: 1.5em;
+}
+
+.active {
+	color: black;
+}
+
+.bio {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../img/suzaku_castle.jpg');
+}
+
+.profile-pic {
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.bio-body {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 14px;
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+	padding: 20px;
+	width: 100%;
+}
+
+.bio__title {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.bio-body-1 {
+	display: flex;
+}
+
+.bio__main-image {
+	align-self: center;
+	width: 50%;
+}
+
+.bio__summary {
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.bio__name {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.bio-body p {
+	font-size: 1.35em;
+	line-height: 37px;
+	align-self: center;
+	margin-right: 3%;
+    text-align: justify;
+}
+
+.bio-body-2 {
+	display: flex;
+	justify-content: end;
+}
+
+.bio-body-2 .icare {
+	width: 16%;
+	margin-left: 4%;
+}
+
+.bio-para-2 {
+	margin-left: 5%;
+}
+
+.bio-body-3 {
+	display: flex;
+}
+
+.bio-body-3 .android {
+	width: 20%;
+	margin-left: 2%;
+}
+
+.android {
+	width: 12%;
+}
+
+.bio-para-3 {
+	margin-left: 3%;
+}
+
+a .twitch {
+	width: 75%;
+}
+
+.bio-body-3 a {
+	align-self: center;
+}
+
+.projects,
+.contact {
+	display: none;
+}
+
+.projects {
+	background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../img/moonlit_wilderness.webp');
+	background-size: 100% 100%;
+}
+
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projects-container .project {
+	text-align: center;
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+	border-radius: 14px;
+	margin: 10px;
+}
+
+.project-3 .mockup {
+	margin-top: 9%;
+}
+
+.project-3 .btn {
+	margin-top: 8%;
+}
+
+.project img {
+	margin-bottom: 10px;
+}
+
+.project p {
+	font-size: 1.35em;
+}
+
+.mockup {
+	width: 100%;
+}
+
+.proj-link {
+	width: 50%;
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+.proj-link:hover {
+	background-color: #B4E081;
+}
+
+.project-icon {
+	width: 50px;
+	margin-left: 20px;
+}
+
+.project-icon-js {
+	width: 36px;
+	margin-left: 20px;
+}
+
+.resume {
+	display: none;
+	text-align: center;
+}
+
+.resume h1 {
+	color: white;
+}
+
+.view-resume {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 17%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+	border-radius: 8px;
+}
+
+.contact {
+	background-image: url("../img/sf_cubes_bg.jpg");
+	background-size: 100% 100%;
+}
+
+.contact div,
+.contact {
+	text-align: center;
+}
+
+.WidgetTitle__Header-sc-ruy1gu-2.ikbkZX,
+.WidgetTitle__Caption-sc-ruy1gu-3.dbxhWl,
+.contact label {
+    color: white;
+}
+
+.TextControlBase__TextControlBaseContainer-sc-17e5ls8-0.gRDcNY.FieldContainer__FieldLayout-sc-gwguj-0.jOpFpn {
+	background-color: white !important;
+}
+
+.contact-icons {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%; 	
+}
+
+.contact i {
+	font-size: 5em;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.card {
+		display: none !important;
+	}
+	
+	.bio {
+		margin-top: 10%;
+		flex-direction: column;
+	}
+
+	.bio h1 {
+		font-size: 2em;
+	}
+
+	.profile-pic {
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bio-body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.bio-body-1,
+	.bio-body-2,
+	.bio-body-3 {
+		flex-direction: column;
+	}
+
+	.bio-body-1 img,
+	.bio-body-2 img,
+	.bio-body-3 img {
+		width: 60% !important;
+	}
+
+	.bio-body .icare,
+	.bio-body .android {
+		margin-top: 25%;
+	}
+
+	.bio-body-3 a {
+		text-align: center;
+	}
+
+	.bio-body p {
+		font-size: 1em;
+		line-height: 30px;
+	}
+
+	.projects {
+		margin-top: 10%;
+	}
+
+	.projects-container .project {
+		width: 95%;
+	}
+
+	.mockup {
+		width: 100%;
+	}
+
+	.view-resume {
+		width: 55%;
+	}
+
+	.contact-icons {
+		width: 100%;
+	}
+
+	.contact-icons img {
+		width: 80%;
+	}
+
+	.eapps-form-element {
+		background-color: white;
+	}
+
+	.eapps-form-actions-button-label {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	/*.profile-pic {
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+
+	.bio-body {
+		margin-top: 4%;
+	}
+
+	.bio-body-1,
+	.bio-body-2,
+	.bio-body-3 {
+		flex-direction: column;
+	}
+
+	.bio-body p {
+		font-size: 1.55em;
+	}
+
+	.bio-body img {
+		width: 31% !important;
+	}
+
+	.bio-body .icare,
+	.bio-body .android {
+		margin-top: 12%;
+	}
+
+	.bio-body-3 a {
+		text-align: center;
+	}
+
+	.projects-container {
+		margin-top: 10px;
+	}
+
+	.projects-container .project {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.view-resume {
+		width: 25%;
+	}
+}

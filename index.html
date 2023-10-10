@@ -21,9 +21,9 @@
 <html lang="en">
 
 <body>
-    <div class="card text-center">
+    <div class="nav-container text-center">
         <div class="card-header">
-            <ul class="nav nav-pills card-header-pills justify-content-around">
+            <ul class="justify-content-around">
                 <li class="nav-item">
                     <a class="nav-link active bio-link" href="#">Home</a>
                 </li>
@@ -64,30 +64,38 @@
         <img src="img/hamburger.png">
     </span>
 
-    <div class="bio">
-        <div class="bio-body container-fluid text-white">
-            <div class="bio-body-1">
-                <h2 class="bio__title">Front End Developer</h2>
-                <img class="bio__main-image" src="img/autifkamal_trans.png" alt="Autif Kamal" />
-                <ul class="bio__summary">
-                    <li>March 2023 - April 2023: Completed TrueCoders bootcamp in C# and .NET</li>
-                    <li>September 2019 - March 2023: 4 years of web development experience (engaging interfaces, mobile responsiveness, APIs, Fullstack Development)</li>
-                </ul>
+    <div class="bio container-fluid">
+        <div class="bio-body text-white row">
+            <div class="bio-body-1 col-lg-12">
+                <div class="text-center">
+                    <img class="bio__main-image img-fluid w-100" src="img/autifkamal_trans.png" alt="Autif Kamal" />
+                    <h1 class="bio__name">Autif Kamal</h1>
+                </div>
+                <div>
+                    <h2 class="bio__title">Front End Developer</h2>
+                    <ul class="bio__summary">
+                        <li>4 years of experience working professionally as a developer</li>
+                        <li><strong>React:</strong> Context and Redux (useSelector, useDispatch), axios, React hooks (useState, useEffect), 
+                            making custom components, event listeners, conditional rendering, react-bootstrap.</li>
+                        <li>
+                            <strong>Node: </strong> jwt authentication, CRUD, filter through database entries, and send responses back to the 
+                            client
+                        </li>
+                            <strong>JavaScript:</strong> Lightbox, slideshows, interactive UI, collapsible containers, 
+                            sliding navigation for mobile.
+                        </li>
+                        <li><strong>HTML & CSS: </strong> Responsive development via flexbox, media queries, or bootstrap
+                            pseudoclasses, transitions, and animations.</li>
+                        <li><strong>WordPress & PHP: </strong>Muffin Builder, page/product templates, Advanced Custom Fields, WooCommerce, 
+                            curl to pull data from ACF and WooCommerce, AJAX ZOOM</li>
+                    </ul>    
+                </div>
                 <!-- <img src="img/cptn_web_rev_crop_trans.png" alt="Captain Web" /> -->
-            </div>
-            <div>
-                <h1 class="bio__name">Autif Kamal</h1>
-            </div>
-            <div class="bio-body-2">
-                <!-- <img class="icare" src="img/icare_logo_crop_trans.png" alt="iCare Pharmacy" /> -->
-                <p class="bio-para-2">
-                    The technologies I use regularly are HTML, CSS, JavaScript, React, Node, C#, and .NET
-                </p>
-                <img class="android" src="img/react_icon.png" alt="React" />
             </div>
             <div class="bio-body-3">
                 <a href="https://www.twitch.tv/MinisterGold" target="_blank"><img class="twitch" src="img/twitch_trans.png" alt="Twitch" /></a>
-                <p class="bio-para-3">When I'm not coding, I am preparing a reasoning class for kids using 90s cartoons, streaming on Twitch, and working out. If you're curious about the background, I played a lot of Street Fighter growing up and that background is Suzaku Castle which is Ryu's stage.</p>
+                <p class="bio-para-3">When I'm not coding, I am preparing a reasoning class for kids using 90s cartoons, streaming on Twitch, 
+                    working out and making videos for YouTube.</p>
             </div>
         </div>
     </div>
@@ -97,42 +105,22 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 project">
-                        <h2 class="text-white">Todo Application</h2>
-                        <img class="mockup" src="img/react_redux_todos.png">
+                        <h2 class="text-white">Meal Planner</h2>
+                        <img class="mockup" src="img/meal_planner_screenshot.png">
                         <div class="">
-                            <a href="https://dashing-lolly-791779.netlify.app/" target="_blank" class="btn-group btn-group-lg" role="group">
+                            <a href="https://incandescent-swan-68d171.netlify.app/" target="_blank" class="btn-group btn-group-lg" role="group">
                                 <button type="button" class="btn btn-primary">Live</button>
                             </a>
-                            <a href="https://github.com/kautif/todos" target="_blank" class="btn-group btn-group-lg" role="group">
+                            <a href="https://github.com/kautif/meal_planner" target="_blank" class="btn-group btn-group-lg" role="group">
                                 <button type="button" class="btn btn-primary">Repo</button>
                             </a>
                         </div>
-                        <p class="text-white">This is a simple React Todo application, but I also used this as an opportunity to play with Redux and TailwindCSS and so far, I'm liking them both.</p>
+                        <p class="text-white">This is a meal planner application made with React. It is a meal planner in a very loose sense. You can calculate your expected daily caloric intake based off your sex, age, height, and weight. You then, can add food to your list and various states are kept track of via Redux. This application doesn't have a backend, so if you refresh the site, you will lose everything. This won't tell you how whether what you're eating is nutritious. It will only tell you whether you're going beyond your daily caloric intake.</p>
                         <div class="icons">
                             <img class="project-icon" src="img/html_icon.png">
                             <img class="project-icon" src="img/css_icon.png">
                             <img class="project-icon-js" src="img/js_icon.png">
                             <img class="project-icon" src="img/react_icon.png">
-                            <img class="project-icon" src="img/tailwind.png">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 project">
-                        <h2 class="text-white">Yu-Gi-Oh Card Search</h2>
-                        <img class="mockup" src="img/mockup_yugioh_card_search.png">
-                        <div class="">
-                            <a href="https://drive.google.com/file/d/15jZDUTpaW_swFENYLPe9Wj0TzDpQ9NQQ/view?usp=drive_link" target="_blank" class="btn-group btn-group-lg" role="group">
-                                <button type="button" class="btn btn-primary">Demo</button>
-                            </a>
-                            <a href="https://github.com/kautif/yugioh_card_search" target="_blank" class="btn-group btn-group-lg" role="group">
-                                <button type="button" class="btn btn-primary">Repo</button>
-                            </a>
-                        </div>
-                        <p class="text-white">Search for Yugioh cards via YGOProdeck API and get going prices for each card according to eBay. Failed search results will return an error message and prompt another search. My Azure membership expired, so I'm afraid you can't play with it. You can only demo it and ask me questions about it</p>
-                        <div class="icons">
-                            <img class="project-icon" src="img/html_icon.png">
-                            <img class="project-icon" src="img/css_icon.png">
-                            <img class="project-icon" src="img/csharp_logo.png">
-                            <img class="project-icon" src="img/NET_Core_Logo.svg">
                         </div>
                     </div>
                     <div class="col-lg-5 project">
@@ -172,6 +160,45 @@
                             <img class="project-icon" src="img/css_icon.png">
                             <img class="project-icon-js" src="img/js_icon.png">
                             <img class="project-icon" src="img/react_icon.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 project">
+                        <h2 class="text-white">Todo Application</h2>
+                        <img class="mockup" src="img/react_redux_todos.png">
+                        <div class="">
+                            <a href="https://dashing-lolly-791779.netlify.app/" target="_blank" class="btn-group btn-group-lg" role="group">
+                                <button type="button" class="btn btn-primary">Live</button>
+                            </a>
+                            <a href="https://github.com/kautif/todos" target="_blank" class="btn-group btn-group-lg" role="group">
+                                <button type="button" class="btn btn-primary">Repo</button>
+                            </a>
+                        </div>
+                        <p class="text-white">This is a simple React Todo application, but I also used this as an opportunity to play with Redux and TailwindCSS and so far, I'm liking them both.</p>
+                        <div class="icons">
+                            <img class="project-icon" src="img/html_icon.png">
+                            <img class="project-icon" src="img/css_icon.png">
+                            <img class="project-icon-js" src="img/js_icon.png">
+                            <img class="project-icon" src="img/react_icon.png">
+                            <img class="project-icon" src="img/tailwind.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 project">
+                        <h2 class="text-white">Yu-Gi-Oh Card Search</h2>
+                        <img class="mockup" src="img/mockup_yugioh_card_search.png">
+                        <div class="">
+                            <a href="https://drive.google.com/file/d/15jZDUTpaW_swFENYLPe9Wj0TzDpQ9NQQ/view?usp=drive_link" target="_blank" class="btn-group btn-group-lg" role="group">
+                                <button type="button" class="btn btn-primary">Demo</button>
+                            </a>
+                            <a href="https://github.com/kautif/yugioh_card_search" target="_blank" class="btn-group btn-group-lg" role="group">
+                                <button type="button" class="btn btn-primary">Repo</button>
+                            </a>
+                        </div>
+                        <p class="text-white">Search for Yugioh cards via YGOProdeck API and get going prices for each card according to eBay. Failed search results will return an error message and prompt another search. My Azure membership expired, so I'm afraid you can't play with it. You can only demo it and ask me questions about it</p>
+                        <div class="icons">
+                            <img class="project-icon" src="img/html_icon.png">
+                            <img class="project-icon" src="img/css_icon.png">
+                            <img class="project-icon" src="img/csharp_logo.png">
+                            <img class="project-icon" src="img/NET_Core_Logo.svg">
                         </div>
                     </div>
                     <div class="col-lg-5 project">
@@ -295,7 +322,7 @@
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
-        <div class="elfsight-app-7bbfdac4-4519-4124-8ae5-ad4f43a83ee4"></div>
+        <!-- <div class="elfsight-app-7bbfdac4-4519-4124-8ae5-ad4f43a83ee4"></div> -->
     </div>
     <script type="text/javascript" src="js/hammenu.js"></script>
     <script type="text/javascript" src="js/sidenav.js"></script>

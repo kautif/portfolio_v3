@@ -20,12 +20,29 @@ p, li {
 	font-family: InstrumentSerif;
 }
 
+.nav-container {
+	background-color: #EEA47F;
+}
+
+.card-header .nav-link {
+	color: black;
+}
+
+.card-header ul {
+	display: flex;
+	list-style: none;
+}
+
+.card-header ul li:hover {
+	text-decoration: underline black;
+}
+
 .nav-link {
 	font-size: 1.5em;
 }
 
 .active {
-	color: black;
+	text-decoration: underline;
 }
 
 .bio {
@@ -33,7 +50,8 @@ p, li {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../img/suzaku_castle.jpg');
+	/* background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../img/suzaku_castle.jpg'); */
+	background-color: #00539C;
 }
 
 .profile-pic {
@@ -131,7 +149,7 @@ a .twitch {
 }
 
 .projects {
-	background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../img/moonlit_wilderness.webp');
+	background: #00539C;
 	background-size: 100% 100%;
 }
 
@@ -200,7 +218,7 @@ a .twitch {
 }
 
 .contact {
-	background-image: url("../img/sf_cubes_bg.jpg");
+	background-color: #00539C;
 	background-size: 100% 100%;
 }
 
@@ -266,7 +284,7 @@ a .twitch {
 	.bio-body-1 img,
 	.bio-body-2 img,
 	.bio-body-3 img {
-		width: 60% !important;
+		/* width: 60% !important; */
 	}
 
 	.bio-body .icare,
@@ -340,9 +358,9 @@ a .twitch {
 		font-size: 1.55em;
 	}
 
-	.bio-body img {
+	/* .bio-body img {
 		width: 31% !important;
-	}
+	} */
 
 	.bio-body .icare,
 	.bio-body .android {
